@@ -36,9 +36,15 @@ ul {
 
 .header {
 }
+
 .page {
   flex: 1 1 auto;
+
+  // .page__intro
+  &__intro {
+  }
 }
+
 .footer {
 }
 
@@ -46,4 +52,13 @@ ul {
   // .btn__link
   &__link {
   }
+}
+
+.title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 128%;
+  color: #214e41;
 }
