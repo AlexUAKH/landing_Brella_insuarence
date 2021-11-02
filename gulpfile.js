@@ -140,6 +140,7 @@ function styles() {
         })
       ])
     )
+    .pipe(group_css_media())
     .pipe(dest(source_folder + "/css/"))
     .pipe(clean_css())
     .pipe(
