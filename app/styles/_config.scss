@@ -7,6 +7,7 @@ $textcolor: #214e41; // Text Color
 $lineheight: 1.5; // Document Line Height
 $userfont: "Raleway"; // User Font Family
 $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+$btn-border-radius: 6px;
 
 $container-width: 1200px;
 $header-container-width: 1350px;
@@ -60,4 +61,8 @@ body {
   color: $textcolor;
   min-width: 320px;
   overflow-x: hidden;
+}
+
+body.lock {
+  overflow: hidden;
 }

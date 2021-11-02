@@ -3,6 +3,11 @@ a {
   color: inherit;
   text-decoration: none;
   display: inline-block;
+  transition: 0.3s;
+  white-space: nowrap;
+  &:hover {
+    color: inherit;
+  }
 }
 
 ul {
