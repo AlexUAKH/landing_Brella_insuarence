@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const burger = document.getElementById("burger");
   const navMenu = document.getElementById("mainMenu");
   const body = document.querySelector("body");
+  const charts = document.querySelectorAll(".charts__chart-body");
 
   burger.addEventListener("click", () => {
     burger.classList.toggle("active");
@@ -29,6 +30,12 @@ document.addEventListener("DOMContentLoaded", () => {
         e.preventDefault();
         menu.classList.toggle("active");
       });
+    }
+  }
+
+  if (charts) {
+    for (const chart of charts) {
+      chart.style.height = chart.dataset.height + "px";
     }
   }
 });

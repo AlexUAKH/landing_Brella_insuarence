@@ -1,0 +1,330 @@
+.why {
+  // .why__container
+  &__container {
+    position: relative;
+  }
+
+  // .why__pluses
+  &__pluses {
+    margin-top: -85px;
+    margin-bottom: 100px;
+    position: relative;
+    z-index: 2;
+    @media (max-width: 960px) and (min-width: 401px) {
+      margin-bottom: 40px;
+    }
+    @media (max-width: 400px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  // .why__body
+  &__body {
+    padding: 37px 60px;
+    @media (max-width: 1200px) and (min-width: 961px) {
+      padding: 37px 40px;
+    }
+    @media (max-width: 960px) and (max-width: 401px) {
+      padding: 24px;
+    }
+    @media (max-width: 400px) {
+      padding: 16px;
+    }
+  }
+  &__body-row {
+    display: flex;
+    margin: 0 -30px;
+    @media (max-width: 860px) {
+      display: block;
+      margin: 0;
+    }
+  }
+
+  &__charts,
+  &__benefits {
+    flex: 0 1 50%;
+  }
+  // .why__benefits
+  &__benefits {
+    padding: 0px 75px 0px 30px;
+    @media (max-width: 1200px) and (min-width: 961px) {
+      padding: 0px 45px 0px 30px;
+    }
+    @media (max-width: 960px) {
+      padding: 0px;
+    }
+  }
+
+  // .why__charts
+  &__charts {
+    padding: 0 30px;
+    @media (max-width: 860px) {
+      padding: 0px 0px 10px 0px;
+    }
+  }
+}
+
+.pluses {
+  background: #ffffff;
+  box-shadow: 2px 2px 10px rgba(232, 230, 230, 0.6);
+  border-radius: 6px;
+
+  // .pluses__row
+  &__row {
+    padding: 30px 50px 50px 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px -8px;
+    @media (max-width: 960px) {
+      padding: 20px 24px 40px 24px;
+    }
+  }
+
+  // .pluses__column
+  &__column {
+    margin-top: 20px;
+    padding: 0px 7px;
+    flex: 0 0 33.3333%;
+    display: flex;
+    min-width: 160px;
+    @media (max-width: 960px) {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  //  .pluses__img
+  &__img {
+    margin-right: 10px;
+    margin-bottom: 15px;
+  }
+  &__column-body {
+  }
+  // .pluses__title
+  &__title {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: #214e41;
+    margin-bottom: 7px;
+  }
+
+  // .pluses__text
+  &__text {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 143%;
+    color: #214e41;
+  }
+}
+
+.benefits {
+  // .benefits__question
+  &__question {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 154%;
+    letter-spacing: 0.05px;
+    text-transform: uppercase;
+    color: #43806c;
+    margin-bottom: 20px;
+  }
+
+  // .benefits__title
+  &__title {
+    margin-bottom: 34px;
+    @media (max-width: 400px) {
+      margin-bottom: 24px;
+      font-size: 30px;
+    }
+  }
+
+  // .benefits__text
+  &__text {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 167%;
+    letter-spacing: 0.02px;
+    color: #757575;
+    margin-bottom: 20px;
+  }
+
+  // .benefits__link
+  &__link {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.02px;
+    color: #214e41;
+    text-align: left;
+    max-width: 107px;
+    border-bottom: 2px solid #214e41;
+    & a {
+      padding: 2px 15px 0;
+      display: flex;
+      text-align: center;
+      white-space: pre-wrap;
+    }
+    @media (min-width: 960px) {
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
+.charts {
+  &__row {
+    display: flex;
+    height: 100%;
+  }
+  &__body,
+  &__charts {
+    flex: 0 0 50%;
+  }
+
+  // .charts__body
+  &__body {
+    padding: 133px 10px 0 10px;
+    @media (max-width: 400px) {
+      padding: 133px 0px 0px 0px;
+    }
+  }
+
+  // .charts__body-value
+  &__body-value {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 129%;
+    color: #214e41;
+    margin-bottom: 30px;
+    position: relative;
+    @media (max-width: 860px) {
+      font-size: 55px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 230%;
+      height: 2px;
+      background: #f0a446;
+      z-index: 5;
+      @media (max-width: 860px) and (min-width: 401px) {
+        width: 200%;
+      }
+      @media (max-width: 400px) {
+        width: 185%;
+      }
+    }
+  }
+
+  // .charts__body-text
+  &__body-text {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 169%;
+    letter-spacing: 0.02px;
+    color: #214e41;
+  }
+
+  // .charts__charts
+  &__charts {
+  }
+
+  &__charts-container {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 0 40px;
+    @media (max-width: 960px) and (min-width: 861px) {
+      padding: 0 20px;
+    }
+    @media (max-width: 860px) {
+      padding: 0 15%;
+    }
+  }
+
+  // .charts__chart
+  &__chart {
+    width: 78px;
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+    @media (max-width: 450px) and (min-width: 401px) {
+      width: 55px;
+      &:not(:last-child) {
+        margin-right: 25px;
+      }
+    }
+    @media (max-width: 400px) {
+      width: 50px;
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  // .charts__chart-value
+  &__chart-value {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 169%;
+    text-align: center;
+    color: #214e41;
+  }
+
+  // .charts__chart-body
+  &__chart-body {
+    background-color: #43806c;
+  }
+
+  // .charts__chart-label
+  &__chart-label {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 169%;
+    text-align: center;
+    color: #214e41;
+    margin-top: 20px;
+    white-space: nowrap;
+    @media (max-width: 400px) {
+      font-size: 10px;
+      margin-left: -10px;
+    }
+  }
+
+  // .charts__footer
+  &__footer {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 169%;
+    text-align: center;
+    color: #757575;
+    position: absolute;
+    bottom: 0;
+    right: 80px;
+  }
+}

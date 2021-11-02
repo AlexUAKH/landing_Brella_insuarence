@@ -672,6 +672,256 @@ ul {
   border: 0;
 }
 
+.why__container {
+  position: relative;
+}
+
+.why__pluses {
+  margin-top: -85px;
+  margin-bottom: 100px;
+  position: relative;
+  z-index: 2;
+}
+
+.why__body {
+  padding: 37px 60px;
+}
+
+.why__body-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -30px;
+}
+
+.why__charts,
+.why__benefits {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 50%;
+  flex: 0 1 50%;
+}
+
+.why__benefits {
+  padding: 0px 75px 0px 30px;
+}
+
+.why__charts {
+  padding: 0 30px;
+}
+
+.pluses {
+  background: #ffffff;
+  -webkit-box-shadow: 2px 2px 10px rgba(232, 230, 230, 0.6);
+  box-shadow: 2px 2px 10px rgba(232, 230, 230, 0.6);
+  border-radius: 6px;
+}
+
+.pluses__row {
+  padding: 30px 50px 50px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0px -8px;
+}
+
+.pluses__column {
+  margin-top: 20px;
+  padding: 0px 7px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 33.3333%;
+  flex: 0 0 33.3333%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 160px;
+}
+
+.pluses__img {
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+.pluses__title {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #214e41;
+  margin-bottom: 7px;
+}
+
+.pluses__text {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 143%;
+  color: #214e41;
+}
+
+.benefits__question {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 154%;
+  letter-spacing: 0.05px;
+  text-transform: uppercase;
+  color: #43806c;
+  margin-bottom: 20px;
+}
+
+.benefits__title {
+  margin-bottom: 34px;
+}
+
+.benefits__text {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 167%;
+  letter-spacing: 0.02px;
+  color: #757575;
+  margin-bottom: 20px;
+}
+
+.benefits__link {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02px;
+  color: #214e41;
+  text-align: left;
+  max-width: 107px;
+  border-bottom: 2px solid #214e41;
+}
+
+.benefits__link a {
+  padding: 2px 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  white-space: pre-wrap;
+}
+
+.charts__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.charts__body,
+.charts__charts {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+}
+
+.charts__body {
+  padding: 133px 10px 0 10px;
+}
+
+.charts__body-value {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 129%;
+  color: #214e41;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.charts__body-value::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 230%;
+  height: 2px;
+  background: #f0a446;
+  z-index: 5;
+}
+
+.charts__body-text {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 169%;
+  letter-spacing: 0.02px;
+  color: #214e41;
+}
+
+.charts__charts-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  padding: 0 0 0 40px;
+}
+
+.charts__chart {
+  width: 78px;
+}
+
+.charts__chart:not(:last-child) {
+  margin-right: 40px;
+}
+
+.charts__chart-value {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 169%;
+  text-align: center;
+  color: #214e41;
+}
+
+.charts__chart-body {
+  background-color: #43806c;
+}
+
+.charts__chart-label {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 169%;
+  text-align: center;
+  color: #214e41;
+  margin-top: 20px;
+  white-space: nowrap;
+}
+
+.charts__footer {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 169%;
+  text-align: center;
+  color: #757575;
+  position: absolute;
+  bottom: 0;
+  right: 80px;
+}
+
 @media (min-width: 366px) {
   .footer__copyright-text br {
     display: none;
@@ -712,6 +962,10 @@ ul {
   }
 
   .intro__btn:hover {
+    opacity: 0.6;
+  }
+
+  .benefits__link:hover {
     opacity: 0.6;
   }
 }
@@ -839,6 +1093,25 @@ ul {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
+
+  .why__benefits {
+    padding: 0px;
+  }
+
+  .pluses__row {
+    padding: 20px 24px 40px 24px;
+  }
+
+  .pluses__column {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (max-width: 960px) and (max-width: 401px) {
+  .why__body {
+    padding: 24px;
+  }
 }
 
 @media (max-width: 959px) {
@@ -859,6 +1132,25 @@ ul {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
+  }
+}
+
+@media (max-width: 860px) {
+  .why__body-row {
+    display: block;
+    margin: 0;
+  }
+
+  .why__charts {
+    padding: 0px 0px 10px 0px;
+  }
+
+  .charts__body-value {
+    font-size: 55px;
+  }
+
+  .charts__charts-container {
+    padding: 0 15%;
   }
 }
 
@@ -940,6 +1232,40 @@ ul {
   .footer__navigation {
     padding: 0 16px;
   }
+
+  .why__pluses {
+    margin-bottom: 20px;
+  }
+
+  .why__body {
+    padding: 16px;
+  }
+
+  .benefits__title {
+    margin-bottom: 24px;
+    font-size: 30px;
+  }
+
+  .charts__body {
+    padding: 133px 0px 0px 0px;
+  }
+
+  .charts__body-value::after {
+    width: 185%;
+  }
+
+  .charts__chart {
+    width: 50px;
+  }
+
+  .charts__chart:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .charts__chart-label {
+    font-size: 10px;
+    margin-left: -10px;
+  }
 }
 
 @media (max-width: 1280px) and (min-width: 881px) {
@@ -976,5 +1302,43 @@ ul {
   .header__language {
     margin-left: 15px;
     margin-right: 15px;
+  }
+}
+
+@media (max-width: 960px) and (min-width: 401px) {
+  .why__pluses {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 961px) {
+  .why__body {
+    padding: 37px 40px;
+  }
+
+  .why__benefits {
+    padding: 0px 45px 0px 30px;
+  }
+}
+
+@media (max-width: 860px) and (min-width: 401px) {
+  .charts__body-value::after {
+    width: 200%;
+  }
+}
+
+@media (max-width: 960px) and (min-width: 861px) {
+  .charts__charts-container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 450px) and (min-width: 401px) {
+  .charts__chart {
+    width: 55px;
+  }
+
+  .charts__chart:not(:last-child) {
+    margin-right: 25px;
   }
 }
