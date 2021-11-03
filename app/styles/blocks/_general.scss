@@ -82,3 +82,60 @@ ul {
   line-height: 128%;
   color: #214e41;
 }
+
+.info {
+  display: flex;
+  margin-bottom: 60px;
+  @media (max-width: 729px) {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  &__body,
+  &__img {
+    flex: 1 1 50%;
+  }
+
+  &__body {
+    padding-right: 44px;
+  }
+
+  &__pretitle {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 154%;
+    letter-spacing: 0.05px;
+    text-transform: uppercase;
+    color: #43806c;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    margin-bottom: 34px;
+  }
+
+  &__text {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 167%;
+    letter-spacing: 0.02px;
+    color: #757575;
+  }
+
+  &__img {
+    text-align: right;
+    align-self: center;
+    @media (max-width: 729px) {
+      margin-top: 20px;
+      text-align: center;
+    }
+    & img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}

@@ -5,65 +5,32 @@
 
   // .plans__info
   &__info {
-    display: flex;
-    margin-bottom: 60px;
-    @media (max-width: 729px) {
-      display: block;
-      margin-bottom: 40px;
-    }
   }
 
   &__info-body,
   &__info-img {
-    flex: 1 1 50%;
   }
 
   // .plans__info-body
   &__info-body {
-    padding-right: 44px;
   }
 
   // .plans__info-pretitle
   &__info-pretitle {
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 13px;
-    line-height: 154%;
-    letter-spacing: 0.05px;
-    text-transform: uppercase;
     color: #43806c;
-    margin-bottom: 20px;
   }
 
   // .plans__info-title
   &__info-title {
-    margin-bottom: 34px;
   }
 
   // .plans__info-text
   &__info-text {
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 167%;
-    letter-spacing: 0.02px;
     color: #757575;
   }
 
   // .plans__info-img
   &__info-img {
-    text-align: right;
-    align-self: center;
-    @media (max-width: 729px) {
-      margin-top: 20px;
-      text-align: center;
-    }
-    & img {
-      max-width: 100%;
-      height: auto;
-    }
   }
 
   // .plans__profits
