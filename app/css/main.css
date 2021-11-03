@@ -928,9 +928,7 @@ ul {
 
 .advantage {
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #e3eeed), color-stop(50%, #214e41));
-  background: -o-linear-gradient(left, #e3eeed 50%, #214e41 50%);
-  background: linear-gradient(to right, #e3eeed 50%, #214e41 50%);
+  background: #e3eeed;
   margin-bottom: 20px;
 }
 
@@ -949,7 +947,6 @@ ul {
 
 .advantage__body {
   padding: 120px 0;
-  width: 50%;
 }
 
 .advantage__question {
@@ -974,27 +971,31 @@ ul {
   color: #43806c;
 }
 
+.tabs__tab:not(:last-child) {
+  margin-bottom: 18px;
+}
+
 .tabs__tab.active {
   font-weight: bold;
   color: #214e41;
 }
 
 .tabs__tab.active a {
-  position: relative;
-}
-
-.tabs__tab.active a::after {
-  position: absolute;
-  content: "";
-  width: 30px;
-  height: 23px;
-  top: 0.5rem;
-  right: -40px;
-  background: url("../../img/dist/icon_right_arrow.png");
+  -webkit-transition: 0s;
+  -o-transition: 0s;
+  transition: 0s;
+  padding-right: 40px;
+  background: url("../../img/dist/icon_right_arrow.png") right 50% no-repeat;
 }
 
 .tabs__item {
-  padding: 160px 0 100px 100px;
+  padding: 160px 16px 100px 100px;
+  background: #214e41;
+  display: none;
+}
+
+.tabs__item.active {
+  display: block;
 }
 
 .tabs__item p {
@@ -1050,6 +1051,14 @@ ul {
 
   .benefits__link:hover {
     opacity: 0.6;
+  }
+}
+
+@media (min-width: 961px) {
+  .advantage {
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #e3eeed), color-stop(50%, #214e41));
+    background: -o-linear-gradient(left, #e3eeed 50%, #214e41 50%);
+    background: linear-gradient(to right, #e3eeed 50%, #214e41 50%);
   }
 }
 
@@ -1189,6 +1198,18 @@ ul {
     display: block;
     text-align: center;
   }
+
+  .advantage__container {
+    display: block;
+  }
+
+  .advantage__body {
+    padding: 40px 0;
+  }
+
+  .tabs__item {
+    padding: 40px 16px;
+  }
 }
 
 @media (max-width: 960px) and (max-width: 401px) {
@@ -1259,6 +1280,10 @@ ul {
 @media (max-width: 500px) {
   .menu__link {
     padding: 8px 6px;
+  }
+
+  .tabs__tab a {
+    white-space: normal;
   }
 }
 
@@ -1401,6 +1426,10 @@ ul {
 
   .why__benefits {
     padding: 0px 45px 0px 30px;
+  }
+
+  .tabs__item {
+    padding: 160px 16px 100px 40px;
   }
 }
 

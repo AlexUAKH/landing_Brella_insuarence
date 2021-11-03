@@ -1,21 +1,31 @@
 .advantage {
   width: 100%;
-  background: linear-gradient(to right, #e3eeed 50%, #214e41 50%);
+  background: #e3eeed;
   margin-bottom: 20px;
+  @media (min-width: 961px) {
+    background: linear-gradient(to right, #e3eeed 50%, #214e41 50%);
+  }
 
   // .advantage__container
   &__container {
     display: flex;
+    @media (max-width: 960px) {
+      display: block;
+    }
   }
 
   &__body,
   &__item-box {
     flex: 1 1 50%;
+    @media (max-width: 960px) {
+    }
   }
 
   &__body {
     padding: 120px 0;
-    width: 50%;
+    @media (max-width: 960px) {
+      padding: 40px 0;
+    }
   }
 
   // .advantage__question
@@ -46,22 +56,24 @@
     font-size: 32px;
     line-height: 131%;
     color: #43806c;
+    & a {
+      @media (max-width: 500px) {
+        white-space: normal;
+      }
+    }
+  }
+
+  &__tab:not(:last-child) {
+    margin-bottom: 18px;
   }
 
   &__tab.active {
     font-weight: bold;
     color: #214e41;
     & a {
-      position: relative;
-      &::after {
-        position: absolute;
-        content: "";
-        width: 30px;
-        height: 23px;
-        top: 0.5rem;
-        right: -40px;
-        background: url("../../img/dist/icon_right_arrow.png");
-      }
+      transition: 0s;
+      padding-right: 40px;
+      background: url("../../img/dist/icon_right_arrow.png") right 50% no-repeat;
     }
   }
 
@@ -71,7 +83,18 @@
 
   // .tabs__item
   &__item {
-    padding: 160px 0 100px 100px;
+    padding: 160px 16px 100px 100px;
+    background: #214e41;
+    display: none;
+    &.active {
+      display: block;
+    }
+    @media (max-width: 1200px) and (min-width: 961px) {
+      padding: 160px 16px 100px 40px;
+    }
+    @media (max-width: 960px) {
+      padding: 40px 16px;
+    }
     & p {
       font-weight: normal;
       font-size: 20px;
