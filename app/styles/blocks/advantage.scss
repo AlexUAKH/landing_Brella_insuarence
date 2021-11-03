@@ -1,0 +1,83 @@
+.advantage {
+  width: 100%;
+  background: linear-gradient(to right, #e3eeed 50%, #214e41 50%);
+  margin-bottom: 20px;
+
+  // .advantage__container
+  &__container {
+    display: flex;
+  }
+
+  &__body,
+  &__item-box {
+    flex: 1 1 50%;
+  }
+
+  &__body {
+    padding: 120px 0;
+    width: 50%;
+  }
+
+  // .advantage__question
+  &__question {
+    font-size: 13px;
+    line-height: 154%;
+    letter-spacing: 0.05px;
+    text-transform: uppercase;
+    color: #214e41;
+    margin-bottom: 20px;
+  }
+
+  // .advantage__tabs
+  &__tabs {
+  }
+
+  &__tabs:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.tabs {
+  // .tabs__tab
+  &__tab {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 131%;
+    color: #43806c;
+  }
+
+  &__tab.active {
+    font-weight: bold;
+    color: #214e41;
+    & a {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        width: 30px;
+        height: 23px;
+        top: 0.5rem;
+        right: -40px;
+        background: url("../../img/dist/icon_right_arrow.png");
+      }
+    }
+  }
+
+  // .tabs__link
+  &__link {
+  }
+
+  // .tabs__item
+  &__item {
+    padding: 160px 0 100px 100px;
+    & p {
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 170%;
+      letter-spacing: 0.02px;
+      color: #ffffff;
+    }
+  }
+}

@@ -101,7 +101,7 @@ ul {
 }
 
 .__container {
-  max-width: 1200px;
+  max-width: 1232px;
   padding: 0 16px;
   margin: 0 auto;
 }
@@ -118,6 +118,10 @@ ul {
   flex: 1 1 auto;
 }
 
+.page__advantage {
+  margin-top: 120px;
+}
+
 .title {
   font-family: Roboto;
   font-style: normal;
@@ -132,7 +136,7 @@ ul {
 }
 
 .footer__container {
-  padding: 80px 0 50px 0;
+  padding: 80px 16px 50px 16px;
   color: #fff;
 }
 
@@ -372,7 +376,7 @@ ul {
   height: 52px;
   border: 0;
   background-color: white;
-  background-image: url("../../img/src/icon_right_arrow.png");
+  background-image: url("../../img/dist/icon_right_arrow.png");
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
@@ -571,7 +575,7 @@ ul {
 
 .intro {
   height: 720px;
-  background: url("../../img/src/background_1st_section.jpg") 50% 0 no-repeat;
+  background: url("../../img/dist/background_1st_section.jpg") 50% 0 no-repeat;
   background-color: #dfdede;
   position: relative;
 }
@@ -920,6 +924,85 @@ ul {
   position: absolute;
   bottom: 0;
   right: 80px;
+}
+
+.advantage {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #e3eeed), color-stop(50%, #214e41));
+  background: -o-linear-gradient(left, #e3eeed 50%, #214e41 50%);
+  background: linear-gradient(to right, #e3eeed 50%, #214e41 50%);
+  margin-bottom: 20px;
+}
+
+.advantage__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.advantage__body,
+.advantage__item-box {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 50%;
+  flex: 1 1 50%;
+}
+
+.advantage__body {
+  padding: 120px 0;
+  width: 50%;
+}
+
+.advantage__question {
+  font-size: 13px;
+  line-height: 154%;
+  letter-spacing: 0.05px;
+  text-transform: uppercase;
+  color: #214e41;
+  margin-bottom: 20px;
+}
+
+.advantage__tabs:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.tabs__tab {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 131%;
+  color: #43806c;
+}
+
+.tabs__tab.active {
+  font-weight: bold;
+  color: #214e41;
+}
+
+.tabs__tab.active a {
+  position: relative;
+}
+
+.tabs__tab.active a::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 23px;
+  top: 0.5rem;
+  right: -40px;
+  background: url("../../img/dist/icon_right_arrow.png");
+}
+
+.tabs__item {
+  padding: 160px 0 100px 100px;
+}
+
+.tabs__item p {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 170%;
+  letter-spacing: 0.02px;
+  color: #ffffff;
 }
 
 @media (min-width: 366px) {
