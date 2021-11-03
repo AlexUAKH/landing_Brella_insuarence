@@ -51,6 +51,17 @@ ul {
   // .page__advantage
   &__advantage {
     margin-top: 120px;
+    @media (max-width: 960px) {
+      margin-top: 40px;
+    }
+  }
+
+  // .page__plans
+  &__plans {
+    margin-top: 120px;
+    @media (max-width: 960px) {
+      margin-top: 40px;
+    }
   }
 }
 

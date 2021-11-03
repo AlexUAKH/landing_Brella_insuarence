@@ -1,0 +1,115 @@
+.plans {
+  // .plans__container
+  &__container {
+  }
+
+  // .plans__info
+  &__info {
+    display: flex;
+    margin-bottom: 60px;
+    @media (max-width: 729px) {
+      display: block;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__info-body,
+  &__info-img {
+    flex: 1 1 50%;
+  }
+
+  // .plans__info-body
+  &__info-body {
+    padding-right: 44px;
+  }
+
+  // .plans__info-pretitle
+  &__info-pretitle {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 154%;
+    letter-spacing: 0.05px;
+    text-transform: uppercase;
+    color: #43806c;
+    margin-bottom: 20px;
+  }
+
+  // .plans__info-title
+  &__info-title {
+    margin-bottom: 34px;
+  }
+
+  // .plans__info-text
+  &__info-text {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 167%;
+    letter-spacing: 0.02px;
+    color: #757575;
+  }
+
+  // .plans__info-img
+  &__info-img {
+    text-align: right;
+    align-self: center;
+    @media (max-width: 729px) {
+      margin-top: 20px;
+      text-align: center;
+    }
+    & img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  // .plans__profits
+  &__profits {
+  }
+}
+
+.profits {
+  display: flex;
+  flex-wrap: wrap;
+  // .profits__column
+  &__column {
+    flex: 0 1 25%;
+    padding-right: 74px;
+    margin-bottom: 20px;
+    text-align: left;
+    @media (max-width: 790px) and (min-width: 415px) {
+      flex: 0 1 50%;
+    }
+    @media (max-width: 414px) {
+      flex: 0 1 100%;
+      text-align: center;
+      padding: 0 16px;
+    }
+  }
+}
+.profit {
+  // .profit__title
+  &__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 130%;
+    color: #f0a446;
+    margin-bottom: 13px;
+  }
+
+  // .profit__text
+  &__text {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 169%;
+    letter-spacing: 0.02px;
+    color: #214e41;
+  }
+}
