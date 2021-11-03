@@ -126,6 +126,10 @@ ul {
   margin-top: 120px;
 }
 
+.page__featuring {
+  margin-top: 220px;
+}
+
 .title {
   font-family: Roboto;
   font-style: normal;
@@ -1230,6 +1234,52 @@ ul {
   background: url("../../img/dist/slider_right_arrow_icon.png") 0 0 no-repeat;
 }
 
+.featuring__row {
+  margin: 0 -33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.featuring__column {
+  margin-top: 20px;
+  padding: 0 33px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 33.3333%;
+  flex: 0 0 33.3333%;
+}
+
+.featuring__img {
+  margin-bottom: 20px;
+}
+
+.featuring__img img {
+  max-width: 100%;
+}
+
+.featuring__title {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 164%;
+  letter-spacing: 0.05px;
+  text-transform: uppercase;
+  color: #43806c;
+  margin-bottom: 15px;
+}
+
+.featuring__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 130%;
+  color: #214e41;
+}
+
 @media (min-width: 366px) {
   .footer__copyright-text br {
     display: none;
@@ -1337,6 +1387,10 @@ ul {
   .page__plans,
   .page__howItWorts,
   .page__customers {
+    margin-top: 40px;
+  }
+
+  .page__featuring {
     margin-top: 40px;
   }
 
@@ -1463,6 +1517,10 @@ ul {
 
   .employe__info-text {
     font-weight: 700;
+  }
+
+  .featuring__row {
+    margin: 0 -10px;
   }
 }
 
@@ -1624,6 +1682,15 @@ ul {
   }
 }
 
+@media (max-width: 419px) {
+  .featuring__column {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    padding: 0 10px;
+  }
+}
+
 @media (max-width: 414px) {
   .profits__column {
     -webkit-box-flex: 0;
@@ -1690,6 +1757,24 @@ ul {
   .employe__info-body {
     padding-top: 100px;
     padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 960px) {
+  .page__featuring {
+    margin-top: 120px;
+  }
+
+  .customers__slider {
+    margin-top: 70px;
+  }
+
+  .featuring__row {
+    margin: 0 -20px;
+  }
+
+  .featuring__column {
+    padding: 0 20px;
   }
 }
 
@@ -1784,14 +1869,17 @@ ul {
   }
 }
 
-@media (max-width: 1100px) and (min-width: 960px) {
-  .customers__slider {
-    margin-top: 70px;
-  }
-}
-
 @media (max-width: 959px) and (min-width: 500px) {
   .customers__slider {
     margin-top: 50px;
+  }
+}
+
+@media (max-width: 959px) and (min-width: 420px) {
+  .featuring__column {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    padding: 0 15px;
   }
 }

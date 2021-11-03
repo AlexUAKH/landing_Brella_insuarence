@@ -70,6 +70,17 @@ ul {
 
   &__customers {
   }
+
+  // .page__featuring
+  &__featuring {
+    margin-top: 220px;
+    @media (max-width: 1100px) and (min-width: 960px) {
+      margin-top: 120px;
+    }
+    @media (max-width: 960px) {
+      margin-top: 40px;
+    }
+  }
 }
 
 .footer {
