@@ -118,11 +118,9 @@ ul {
   flex: 1 1 auto;
 }
 
-.page__advantage {
-  margin-top: 120px;
-}
-
-.page__plans {
+.page__advantage,
+.page__plans,
+.page__howItWorts {
   margin-top: 120px;
 }
 
@@ -139,7 +137,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 60px;
 }
 
 .info__body,
@@ -179,10 +176,37 @@ ul {
   color: #757575;
 }
 
+.info__text:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+.info__link {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.02px;
+  color: #214e41;
+  text-align: left;
+  max-width: 107px;
+  border-bottom: 2px solid #214e41;
+}
+
+.info__link a {
+  padding: 2px 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  white-space: pre-wrap;
+}
+
 .info__img {
-  text-align: right;
   -ms-flex-item-align: center;
   align-self: center;
+  text-align: center;
 }
 
 .info__img img {
@@ -1072,6 +1096,14 @@ ul {
   color: #757575;
 }
 
+.plans__info-img {
+  text-align: right;
+}
+
+.plans__profits {
+  margin-top: 60px;
+}
+
 .profits {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1109,6 +1141,23 @@ ul {
   color: #214e41;
 }
 
+.howItWorts__info {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.howItWorts__info-img {
+  padding-right: 50px;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
+.howItWorts__info-body {
+  padding-left: 20px;
+  padding-bottom: 100px;
+}
+
 @media (min-width: 366px) {
   .footer__copyright-text br {
     display: none;
@@ -1116,6 +1165,10 @@ ul {
 }
 
 @media (min-width: 960px) {
+  .info__link:hover {
+    opacity: 0.6;
+  }
+
   .footer__body {
     padding-bottom: 71px;
   }
@@ -1193,11 +1246,9 @@ ul {
 }
 
 @media (max-width: 960px) {
-  .page__advantage {
-    margin-top: 40px;
-  }
-
-  .page__plans {
+  .page__advantage,
+  .page__plans,
+  .page__howItWorts {
     margin-top: 40px;
   }
 
@@ -1372,12 +1423,42 @@ ul {
 @media (max-width: 729px) {
   .info {
     display: block;
-    margin-bottom: 40px;
   }
 
   .info__img {
     margin-top: 20px;
+  }
+
+  .plans__info-img {
     text-align: center;
+  }
+
+  .plans__profits {
+    margin-top: 40px;
+  }
+
+  .howItWorts__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .howItWorts__info-img {
+    -ms-flex-item-align: center;
+    align-self: center;
+    justify-self: flex-start;
+    padding-right: 0;
+  }
+
+  .howItWorts__info-body {
+    padding-bottom: 0px;
   }
 }
 
@@ -1470,6 +1551,14 @@ ul {
 }
 
 @media (max-width: 400px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .info__title {
+    margin-bottom: 24px;
+  }
+
   .footer__navigation {
     padding: 0 16px;
   }

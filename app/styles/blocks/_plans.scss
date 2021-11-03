@@ -31,10 +31,18 @@
 
   // .plans__info-img
   &__info-img {
+    text-align: right;
+    @media (max-width: 729px) {
+      text-align: center;
+    }
   }
 
   // .plans__profits
   &__profits {
+    margin-top: 60px;
+    @media (max-width: 729px) {
+      margin-top: 40px;
+    }
   }
 }
 
