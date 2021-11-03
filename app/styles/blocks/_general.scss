@@ -39,6 +39,7 @@ ul {
 
 .page {
   flex: 1 1 auto;
+  min-width: 0;
 
   // .page__intro
   &__intro {
@@ -51,7 +52,8 @@ ul {
   // .page__advantage
   &__advantage,
   &__plans,
-  &__howItWorts {
+  &__howItWorts,
+  &__customers {
     margin-top: 120px;
     @media (max-width: 960px) {
       margin-top: 40px;
@@ -64,6 +66,9 @@ ul {
 
   // .page__employe
   &__employe {
+  }
+
+  &__customers {
   }
 }
 

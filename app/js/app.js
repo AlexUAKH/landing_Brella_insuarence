@@ -1,5 +1,8 @@
 // // Import vendor jQuery plugin example
 // import '~/app/libs/mmenu/dist/mmenu.js'
+import Swiper, { Navigation } from "swiper";
+
+Swiper.use([Navigation]);
 
 document.addEventListener("DOMContentLoaded", () => {
   // Custom JS
@@ -13,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const tabItem = document.querySelectorAll(".tabs__item");
   let documentWidth = window.innerWidth > 0 ? window.innerWidth : screen.width;
   const movableNones = document.querySelectorAll("*[data-move]");
+  const customersSlider = document.getElementsByClassName("customers__slider");
 
   window.addEventListener("resize", function () {
     documentWidth = window.innerWidth > 0 ? window.innerWidth : screen.width;
@@ -83,5 +87,37 @@ document.addEventListener("DOMContentLoaded", () => {
         .getElementsByClassName("advantage__item-box")[0]
         .appendChild(node);
     else document.getElementsByClassName(target)[0].after(node);
+  }
+  console.log(customersSlider);
+
+  if (customersSlider.length) {
+    const swiper = new Swiper(".swiper", {
+      // Default parameters
+      slidesPerView: 1,
+      loop: true,
+      spaceBetween: 80,
+      navigation: {
+        nextEl: ".customers__slider-button-next",
+        prevEl: ".customers__slider-button-prev"
+      },
+      breakpoints: {
+        450: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        680: {
+          slidesPerView: 3,
+          spaceBetween: 40
+        },
+        960: {
+          slidesPerView: 4,
+          spaceBetween: 60
+        },
+        1200: {
+          slidesPerView: 5,
+          spaceBetween: 80
+        }
+      }
+    });
   }
 });
