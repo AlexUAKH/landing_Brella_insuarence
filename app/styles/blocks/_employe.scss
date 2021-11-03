@@ -1,0 +1,62 @@
+.employe {
+  background: url("../../img/dist/backgrownd_for_employers_section.jpg") 50% 0
+    no-repeat;
+  background-color: #dfdede;
+  position: relative;
+
+  @media (max-width: 1015px) {
+    background-position: 60% 0;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      background-color: rgba(#fff, 0.7);
+    }
+  }
+  // .employe__container
+  &__container {
+    position: relative;
+    z-index: 5;
+  }
+
+  // .employe__info
+  &__info {
+  }
+
+  // .employe__info-body
+  &__info-body {
+    padding-top: 125px;
+    padding-bottom: 112px;
+    @media (max-width: 400px) {
+      padding-top: 100px;
+      padding-bottom: 80px;
+    }
+  }
+
+  // .employe__info-pretitle
+  &__info-pretitle {
+  }
+
+  // .employe__info-title
+  &__info-title {
+  }
+
+  // .employe__info-text
+  &__info-text {
+    @media (max-width: 960px) {
+      font-weight: 700;
+    }
+  }
+
+  // .employe__link
+  &__link {
+  }
+
+  // .employe__info-img
+  &__info-img {
+  }
+}

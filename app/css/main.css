@@ -1158,6 +1158,22 @@ ul {
   padding-bottom: 100px;
 }
 
+.employe {
+  background: url("../../img/dist/backgrownd_for_employers_section.jpg") 50% 0 no-repeat;
+  background-color: #dfdede;
+  position: relative;
+}
+
+.employe__container {
+  position: relative;
+  z-index: 5;
+}
+
+.employe__info-body {
+  padding-top: 125px;
+  padding-bottom: 112px;
+}
+
 @media (min-width: 366px) {
   .footer__copyright-text br {
     display: none;
@@ -1242,6 +1258,21 @@ ul {
     bottom: 0;
     z-index: 1;
     background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .employe {
+    background-position: 60% 0;
+  }
+
+  .employe::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.7);
   }
 }
 
@@ -1371,6 +1402,10 @@ ul {
 
   .tabs__item {
     padding: 40px 16px;
+  }
+
+  .employe__info-text {
+    font-weight: 700;
   }
 }
 
@@ -1595,6 +1630,11 @@ ul {
   .charts__chart-label {
     font-size: 10px;
     margin-left: -10px;
+  }
+
+  .employe__info-body {
+    padding-top: 100px;
+    padding-bottom: 80px;
   }
 }
 
