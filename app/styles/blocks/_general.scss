@@ -53,7 +53,8 @@ ul {
   &__advantage,
   &__plans,
   &__howItWorts,
-  &__customers {
+  &__customers,
+  &__letstalk {
     margin-top: 120px;
     @media (max-width: 960px) {
       margin-top: 40px;
@@ -80,6 +81,10 @@ ul {
     @media (max-width: 960px) {
       margin-top: 40px;
     }
+  }
+
+  // .page__letstalk
+  &__letstalk {
   }
 }
 
