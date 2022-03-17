@@ -1,5 +1,2 @@
 node_modules
-app/css
-app/js
-app/css/main.css
-app/css/main.min.css
+dist

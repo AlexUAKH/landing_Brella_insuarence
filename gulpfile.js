@@ -60,6 +60,7 @@ import changed from "gulp-changed";
 import concat from "gulp-concat";
 import rsync from "gulp-rsync";
 import del from "del";
+import ghPages from "gulp-gh-pages";
 
 function browsersync() {
   browserSync.init({
@@ -243,7 +244,11 @@ function startwatch() {
   );
 }
 
-export { scripts, styles, images, deploy };
+function gpDeploy() {
+  return src("./dist/**/*").pipe(ghPages());
+}
+
+export { scripts, styles, images, deploy, gpDeploy };
 export let assets = series(scripts, styles, images);
 export let build = series(
   cleandist,
