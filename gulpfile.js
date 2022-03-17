@@ -61,6 +61,7 @@ import concat from "gulp-concat";
 import rsync from "gulp-rsync";
 import del from "del";
 import ghPages from "gulp-gh-pages";
+// const ghPages = require("gulp-gh-pages");
 
 function browsersync() {
   browserSync.init({
@@ -245,7 +246,14 @@ function startwatch() {
 }
 
 function gpDeploy() {
-  return src("./dist/**/*").pipe(ghPages());
+  return src("./dist/**/*").pipe(
+    ghPages({
+      branch: "master",
+      orign: "origin",
+      branch: "gh-pages",
+      remoteUrl: " https://github.com/AlexUAKH/landing_Brella_insuarence.git"
+    })
+  );
 }
 
 export { scripts, styles, images, deploy, gpDeploy };

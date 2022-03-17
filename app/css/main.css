@@ -598,6 +598,7 @@ ul {
 .menu .sub-menu__list {
   display: none;
   position: absolute;
+  z-index: 20;
   top: 25px;
   right: 0;
   padding-top: 20px;

@@ -100,6 +100,7 @@
       border: 2px solid $accent;
     }
   }
+
   @media (max-width: 1100px) {
     &__item {
       margin: 0 6px;
@@ -108,6 +109,7 @@
       padding: 5px 8px;
     }
   }
+
   @media (max-width: 960px) {
     display: none;
     position: fixed;
@@ -162,6 +164,7 @@
     &__list {
       display: none;
       position: absolute;
+      z-index: 20;
       top: 25px;
       right: 0;
       // min-width: 80px;
